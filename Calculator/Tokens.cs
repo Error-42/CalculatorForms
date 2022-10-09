@@ -34,6 +34,8 @@ namespace Calculator
                 Slash,
                 LPar,
                 RPar,
+                Start,
+                End,
             }
 
             public Type Ty { get; }

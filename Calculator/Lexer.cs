@@ -13,6 +13,8 @@ namespace Calculator
             int pos = 0;
             List<Token> tokens = new();
 
+            tokens.Add(new Token.Symbol(0, Token.Symbol.Type.Start));
+
             while (pos < input.Length)
             {
                 if (input[pos] == '+')
@@ -77,6 +79,8 @@ namespace Calculator
                     return Result<List<Token>>.NewErr($"Unexpected character '{input[pos]}'");
                 }
             }
+
+            tokens.Add(new Token.Symbol(input.Length, Token.Symbol.Type.End));
 
             return Result<List<Token>>.NewOk(tokens);
         }
