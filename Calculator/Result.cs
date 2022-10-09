@@ -1,4 +1,6 @@
-﻿namespace Calculator
+﻿using System;
+
+namespace Calculator
 {
     public record Result<T>(T? Val, string? Err)
     {
@@ -10,6 +12,18 @@
         public bool IsOk()
         {
             return Err == null;
+        }
+
+        public Result<T> Map(Func<T, T> func)
+        {
+            if (IsOk())
+            {
+                return Result<T>.NewOk(func(Val!));
+            }
+            else
+            {
+                return this;
+            }
         }
 
         static public Result<T> NewErr(string err) => new Result<T>(default, err);
