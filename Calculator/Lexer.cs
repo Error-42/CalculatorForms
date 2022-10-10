@@ -59,7 +59,7 @@ namespace Calculator
                         pos++;
                     }
 
-                    if (input[pos] == '.')
+                    if (pos < input.Length && input[pos] == '.')
                     {
                         double mul = 1;
                         pos++;
