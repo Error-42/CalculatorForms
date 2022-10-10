@@ -140,11 +140,10 @@ namespace Calculator
 
             if (impl.Cur is Token.Symbol symbol && symbol.Ty == Token.Symbol.Type.End)
             {
-                // Todo: give better error message;
-                return Result<Node>.NewErr($"Unexpected token");
+                return res;
             }
-
-            return res;
+            // Todo: give better error message;
+            return Result<Node>.NewErr($"Unexpected token");
         }
     }
 }
