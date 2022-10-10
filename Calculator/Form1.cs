@@ -23,6 +23,12 @@ namespace Calculator
         {
             string input = textBoxInput.Text;
 
+            if (input == "")
+            {
+                labelResult.Text = "";
+                return;
+            }
+
             Result<List<Token>> tokens = Lexer.Lex(input);
             if (tokens.IsErr())
             {
