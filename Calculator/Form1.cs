@@ -50,19 +50,16 @@ namespace Calculator
         private void Clear()
         {
             textBoxInput.Text = "";
-            UpdateAnswer();
         }
 
         private void AddChar(char c)
         {
             textBoxInput.Text += c;
-            UpdateAnswer();
         }
 
         private void RemoveChar()
         {
             textBoxInput.Text = textBoxInput.Text.Substring(0, textBoxInput.Text.Length - 1);
-            UpdateAnswer();
         }
 
 
