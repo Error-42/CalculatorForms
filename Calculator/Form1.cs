@@ -59,7 +59,10 @@ namespace Calculator
 
         private void RemoveChar()
         {
-            textBoxInput.Text = textBoxInput.Text.Substring(0, textBoxInput.Text.Length - 1);
+            if (textBoxInput.Text.Length >= 1)
+            {
+                textBoxInput.Text = textBoxInput.Text.Substring(0, textBoxInput.Text.Length - 1);
+            }
         }
 
 
