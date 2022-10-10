@@ -77,7 +77,7 @@ namespace Calculator
                     if (symbol.Ty == Token.Symbol.Type.Star || symbol.Ty == Token.Symbol.Type.Slash)
                     {
                         Pos++;
-                        Result<Node> rhs = ParseFactor();
+                        Result<Node> rhs = ParseUnit();
                         if (rhs.IsErr()) return rhs;
 
                         node = new Node.BinaryOp(node, symbol.Ty switch
