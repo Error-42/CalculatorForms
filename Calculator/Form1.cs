@@ -46,7 +46,7 @@ namespace Calculator
             Result<double> result = node.Val!.Evaluate();
             if (result.IsErr())
             {
-                labelResult.Text = node.Err!;
+                labelResult.Text = result.Err!;
                 return;
             }
 
