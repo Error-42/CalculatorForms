@@ -88,5 +88,10 @@ namespace Calculator
         private void button8_Click(object sender, EventArgs e) => AddChar('8');
         private void button9_Click(object sender, EventArgs e) => AddChar('9');
         #endregion
+
+        private void textBoxInput_TextChanged(object sender, EventArgs e)
+        {
+            UpdateAnswer();
+        }
     }
 }

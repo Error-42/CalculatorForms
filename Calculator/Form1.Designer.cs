@@ -397,6 +397,7 @@ namespace Calculator
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.Size = new System.Drawing.Size(351, 31);
             this.textBoxInput.TabIndex = 3;
+            this.textBoxInput.TextChanged += new System.EventHandler(this.textBoxInput_TextChanged);
             // 
             // Form1
             // 
