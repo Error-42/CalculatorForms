@@ -110,13 +110,13 @@ namespace Calculator
                         else
                         {
                             // Todo: improve error message
-                            return Result<Node>.NewErr("Unexprected token, expected ')'");
+                            return Result<Node>.NewErr("Unexpected token, expected ')'");
                         }
                     }
                     else
                     {
                         // Todo: improve error message
-                        return Result<Node>.NewErr("Unexprected token");
+                        return Result<Node>.NewErr("Unexpected token");
                     }
                 }
                 else if (Cur is Token.Value value)
