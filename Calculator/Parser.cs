@@ -47,7 +47,7 @@ namespace Calculator
 
                 while (Cur is Token.Symbol symbol)
                 {
-                    if (symbol.Ty == Token.Symbol.Type.Plus)
+                    if (symbol.Ty == Token.Symbol.Type.Plus || symbol.Ty == Token.Symbol.Type.Minus)
                     {
                         Pos++;
                         Result<Node> rhs = ParseFactor();
