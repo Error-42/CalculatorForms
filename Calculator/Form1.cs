@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,30 @@ namespace Calculator
         // Update function already exists.
         void UpdateAnswer()
         {
-            throw new NotImplementedException();
+            string input = textBoxInput.Text;
+
+            Result<List<Token>> tokens = Lexer.Lex(input);
+            if (tokens.IsErr())
+            {
+                labelResult.Text = tokens.Err!;
+                return;
+            }
+
+            Result<Node> node = Parser.Parse(tokens.Val!);
+            if (node.IsErr())
+            {
+                labelResult.Text = node.Err!;
+                return;
+            }
+
+            Result<double> result = node.Val!.Evaluate();
+            if (result.IsErr())
+            {
+                labelResult.Text = node.Err!;
+                return;
+            }
+
+            labelResult.Text = result.Val!.ToString();
         }
 
         private void Clear()
