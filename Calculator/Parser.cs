@@ -74,7 +74,7 @@ namespace Calculator
 
                 while (Cur is Token.Symbol symbol)
                 {
-                    if (symbol.Ty == Token.Symbol.Type.Plus)
+                    if (symbol.Ty == Token.Symbol.Type.Star || symbol.Ty == Token.Symbol.Type.Slash)
                     {
                         Pos++;
                         Result<Node> rhs = ParseFactor();
