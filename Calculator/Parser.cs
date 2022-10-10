@@ -59,6 +59,7 @@ namespace Calculator
                             Token.Symbol.Type.Minus => Node.BinaryOp.Type.Sub,
                         }, rhs.Val!);
                     }
+                    else break;
                 }
 
                 return Result<Node>.NewOk(node!);
@@ -85,6 +86,7 @@ namespace Calculator
                             Token.Symbol.Type.Slash => Node.BinaryOp.Type.Div,
                         }, rhs.Val!);
                     }
+                    else break;
                 }
 
                 return Result<Node>.NewOk(node!);
@@ -119,7 +121,9 @@ namespace Calculator
                 }
                 else if (Cur is Token.Value value)
                 {
-                    return Result<Node>.NewOk(new Node.Value(value));
+                    var res = Result<Node>.NewOk(new Node.Value(value));
+                    Pos++;
+                    return res;
                 }
                 else
                 {
