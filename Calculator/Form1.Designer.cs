@@ -60,9 +60,10 @@ namespace Calculator
             this.labelResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelResult.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelResult.Location = new System.Drawing.Point(12, 39);
+            this.labelResult.Location = new System.Drawing.Point(17, 65);
+            this.labelResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(251, 39);
+            this.labelResult.Size = new System.Drawing.Size(359, 65);
             this.labelResult.TabIndex = 1;
             this.labelResult.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
@@ -96,7 +97,8 @@ namespace Calculator
             this.tableLayoutPanel1.Controls.Add(this.buttonStar, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.buttonMinus, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.buttonPlus, 3, 4);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 81);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(17, 135);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -104,7 +106,7 @@ namespace Calculator
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(251, 274);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(359, 457);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // buttonBackspace
@@ -112,9 +114,10 @@ namespace Calculator
             this.buttonBackspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBackspace.Location = new System.Drawing.Point(189, 3);
+            this.buttonBackspace.Location = new System.Drawing.Point(271, 5);
+            this.buttonBackspace.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonBackspace.Name = "buttonBackspace";
-            this.buttonBackspace.Size = new System.Drawing.Size(59, 48);
+            this.buttonBackspace.Size = new System.Drawing.Size(84, 81);
             this.buttonBackspace.TabIndex = 19;
             this.buttonBackspace.Text = "<-";
             this.buttonBackspace.UseVisualStyleBackColor = true;
@@ -125,9 +128,10 @@ namespace Calculator
             this.buttonClosePar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonClosePar.Location = new System.Drawing.Point(127, 3);
+            this.buttonClosePar.Location = new System.Drawing.Point(182, 5);
+            this.buttonClosePar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonClosePar.Name = "buttonClosePar";
-            this.buttonClosePar.Size = new System.Drawing.Size(56, 48);
+            this.buttonClosePar.Size = new System.Drawing.Size(81, 81);
             this.buttonClosePar.TabIndex = 18;
             this.buttonClosePar.Text = ")";
             this.buttonClosePar.UseVisualStyleBackColor = true;
@@ -138,9 +142,10 @@ namespace Calculator
             this.buttonOpenPar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOpenPar.Location = new System.Drawing.Point(65, 3);
+            this.buttonOpenPar.Location = new System.Drawing.Point(93, 5);
+            this.buttonOpenPar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonOpenPar.Name = "buttonOpenPar";
-            this.buttonOpenPar.Size = new System.Drawing.Size(56, 48);
+            this.buttonOpenPar.Size = new System.Drawing.Size(81, 81);
             this.buttonOpenPar.TabIndex = 17;
             this.buttonOpenPar.Text = "(";
             this.buttonOpenPar.UseVisualStyleBackColor = true;
@@ -151,9 +156,10 @@ namespace Calculator
             this.buttonC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonC.Location = new System.Drawing.Point(3, 3);
+            this.buttonC.Location = new System.Drawing.Point(4, 5);
+            this.buttonC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonC.Name = "buttonC";
-            this.buttonC.Size = new System.Drawing.Size(56, 48);
+            this.buttonC.Size = new System.Drawing.Size(81, 81);
             this.buttonC.TabIndex = 0;
             this.buttonC.Text = "C";
             this.buttonC.UseVisualStyleBackColor = true;
@@ -164,9 +170,10 @@ namespace Calculator
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(3, 111);
+            this.button4.Location = new System.Drawing.Point(4, 187);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 48);
+            this.button4.Size = new System.Drawing.Size(81, 81);
             this.button4.TabIndex = 4;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
@@ -177,9 +184,10 @@ namespace Calculator
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(65, 111);
+            this.button5.Location = new System.Drawing.Point(93, 187);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(56, 48);
+            this.button5.Size = new System.Drawing.Size(81, 81);
             this.button5.TabIndex = 5;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
@@ -190,9 +198,10 @@ namespace Calculator
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Location = new System.Drawing.Point(127, 111);
+            this.button6.Location = new System.Drawing.Point(182, 187);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(56, 48);
+            this.button6.Size = new System.Drawing.Size(81, 81);
             this.button6.TabIndex = 6;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
@@ -203,9 +212,10 @@ namespace Calculator
             this.button0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button0.Location = new System.Drawing.Point(3, 219);
+            this.button0.Location = new System.Drawing.Point(4, 369);
+            this.button0.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(56, 52);
+            this.button0.Size = new System.Drawing.Size(81, 83);
             this.button0.TabIndex = 10;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
@@ -216,9 +226,10 @@ namespace Calculator
             this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.Location = new System.Drawing.Point(127, 57);
+            this.button9.Location = new System.Drawing.Point(182, 96);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(56, 48);
+            this.button9.Size = new System.Drawing.Size(81, 81);
             this.button9.TabIndex = 9;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
@@ -229,9 +240,10 @@ namespace Calculator
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(127, 165);
+            this.button3.Location = new System.Drawing.Point(182, 278);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 48);
+            this.button3.Size = new System.Drawing.Size(81, 81);
             this.button3.TabIndex = 3;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
@@ -242,9 +254,10 @@ namespace Calculator
             this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.Location = new System.Drawing.Point(65, 57);
+            this.button8.Location = new System.Drawing.Point(93, 96);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(56, 48);
+            this.button8.Size = new System.Drawing.Size(81, 81);
             this.button8.TabIndex = 8;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
@@ -255,9 +268,10 @@ namespace Calculator
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(65, 165);
+            this.button2.Location = new System.Drawing.Point(93, 278);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 48);
+            this.button2.Size = new System.Drawing.Size(81, 81);
             this.button2.TabIndex = 2;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
@@ -268,9 +282,10 @@ namespace Calculator
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.Location = new System.Drawing.Point(3, 57);
+            this.button7.Location = new System.Drawing.Point(4, 96);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(56, 48);
+            this.button7.Size = new System.Drawing.Size(81, 81);
             this.button7.TabIndex = 7;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
@@ -281,9 +296,10 @@ namespace Calculator
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(3, 165);
+            this.button1.Location = new System.Drawing.Point(4, 278);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 48);
+            this.button1.Size = new System.Drawing.Size(81, 81);
             this.button1.TabIndex = 1;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
@@ -294,9 +310,10 @@ namespace Calculator
             this.buttonComma.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonComma.Location = new System.Drawing.Point(65, 219);
+            this.buttonComma.Location = new System.Drawing.Point(93, 369);
+            this.buttonComma.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonComma.Name = "buttonComma";
-            this.buttonComma.Size = new System.Drawing.Size(56, 52);
+            this.buttonComma.Size = new System.Drawing.Size(81, 83);
             this.buttonComma.TabIndex = 11;
             this.buttonComma.Text = ",";
             this.buttonComma.UseVisualStyleBackColor = true;
@@ -307,9 +324,10 @@ namespace Calculator
             this.buttonEqual.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEqual.Location = new System.Drawing.Point(127, 219);
+            this.buttonEqual.Location = new System.Drawing.Point(182, 369);
+            this.buttonEqual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonEqual.Name = "buttonEqual";
-            this.buttonEqual.Size = new System.Drawing.Size(56, 52);
+            this.buttonEqual.Size = new System.Drawing.Size(81, 83);
             this.buttonEqual.TabIndex = 12;
             this.buttonEqual.Text = "=";
             this.buttonEqual.UseVisualStyleBackColor = true;
@@ -319,9 +337,10 @@ namespace Calculator
             this.buttonSlash.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSlash.Location = new System.Drawing.Point(189, 57);
+            this.buttonSlash.Location = new System.Drawing.Point(271, 96);
+            this.buttonSlash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSlash.Name = "buttonSlash";
-            this.buttonSlash.Size = new System.Drawing.Size(59, 48);
+            this.buttonSlash.Size = new System.Drawing.Size(84, 81);
             this.buttonSlash.TabIndex = 13;
             this.buttonSlash.Text = "/";
             this.buttonSlash.UseVisualStyleBackColor = true;
@@ -332,9 +351,10 @@ namespace Calculator
             this.buttonStar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonStar.Location = new System.Drawing.Point(189, 111);
+            this.buttonStar.Location = new System.Drawing.Point(271, 187);
+            this.buttonStar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonStar.Name = "buttonStar";
-            this.buttonStar.Size = new System.Drawing.Size(59, 48);
+            this.buttonStar.Size = new System.Drawing.Size(84, 81);
             this.buttonStar.TabIndex = 14;
             this.buttonStar.Text = "*";
             this.buttonStar.UseVisualStyleBackColor = true;
@@ -345,9 +365,10 @@ namespace Calculator
             this.buttonMinus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonMinus.Location = new System.Drawing.Point(189, 165);
+            this.buttonMinus.Location = new System.Drawing.Point(271, 278);
+            this.buttonMinus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonMinus.Name = "buttonMinus";
-            this.buttonMinus.Size = new System.Drawing.Size(59, 48);
+            this.buttonMinus.Size = new System.Drawing.Size(84, 81);
             this.buttonMinus.TabIndex = 15;
             this.buttonMinus.Text = "-";
             this.buttonMinus.UseVisualStyleBackColor = true;
@@ -358,9 +379,10 @@ namespace Calculator
             this.buttonPlus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonPlus.Location = new System.Drawing.Point(189, 219);
+            this.buttonPlus.Location = new System.Drawing.Point(271, 369);
+            this.buttonPlus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonPlus.Name = "buttonPlus";
-            this.buttonPlus.Size = new System.Drawing.Size(59, 52);
+            this.buttonPlus.Size = new System.Drawing.Size(84, 83);
             this.buttonPlus.TabIndex = 16;
             this.buttonPlus.Text = "+";
             this.buttonPlus.UseVisualStyleBackColor = true;
@@ -368,19 +390,23 @@ namespace Calculator
             // 
             // textBoxInput
             // 
-            this.textBoxInput.Location = new System.Drawing.Point(13, 13);
+            this.textBoxInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxInput.Location = new System.Drawing.Point(19, 22);
+            this.textBoxInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxInput.Name = "textBoxInput";
-            this.textBoxInput.Size = new System.Drawing.Size(247, 23);
+            this.textBoxInput.Size = new System.Drawing.Size(351, 31);
             this.textBoxInput.TabIndex = 3;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 367);
+            this.ClientSize = new System.Drawing.Size(393, 612);
             this.Controls.Add(this.textBoxInput);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.labelResult);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Számológép";
             this.tableLayoutPanel1.ResumeLayout(false);
